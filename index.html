@@ -57,18 +57,7 @@
     
     </div>
 <!-- ... other kathismas ... -->
-<script>
-// Add a button to scroll to the current kathisma
-const scrollToKathismaButton = document.createElement('button');
-scrollToKathismaButton.textContent = 'К Кафизме';
-scrollToKathismaButton.addEventListener('click', () => {
-  const currentKathisma = document.querySelector('.kathisma[style*="display: block"]');
-  if (currentKathisma && window.pageYOffset <= 100) {
-    currentKathisma.scrollIntoView({ behavior: 'smooth' });
-  }
-});
-document.body.appendChild(scrollToKathismaButton);
-</script>
+
 <script src="script.js"></script>
 
 </body>
