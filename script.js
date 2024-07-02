@@ -15,7 +15,7 @@ const scrollToKathismaButton = document.createElement('button');
 scrollToKathismaButton.textContent = 'К Кафизме';
 scrollToKathismaButton.addEventListener('click', () => {
   const currentKathisma = document.querySelector('.kathisma[style*="display: block"]');
-  if (currentKathisma && window.pageYOffset <= 100) {
+  if (currentKathisma && window.pageYOffset <= 0) {
     currentKathisma.scrollIntoView({ behavior: 'smooth' });
   }
 });
