@@ -3,7 +3,7 @@ window.addEventListener('scroll', () => {
   if (window.pageYOffset <= 100) {
     if (!scrollToKathismaButton) {
       const newButton = document.createElement('button');
-      newButton.textContent = 'Scroll to Current Kathisma';
+      newButton.textContent = 'К Кафизме';
       newButton.classList.add('scroll-to-kathisma-button');
       newButton.style.position = 'fixed';
       newButton.style.top = '20px';
