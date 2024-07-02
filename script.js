@@ -1,6 +1,6 @@
 const kathismas = document.querySelectorAll('.kathisma');
 const today = new Date();
-const dayOfYear = today.getDate() + (today.getMonth() * 30); // rough estimate, adjust as needed
+const dayOfYear = today.getDate() + (today.getMonth() * 30 - 1); // rough estimate, adjust as needed
 
 kathismas.forEach((kathisma, index) => {
  if (index === dayOfYear % kathismas.length) {
