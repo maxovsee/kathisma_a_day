@@ -13,7 +13,7 @@ kathismas.forEach((kathisma, index) => {
 // Add a button to scroll to the current kathisma, if the user is at the top of the page
 window.addEventListener('scroll', () => {
   const scrollToKathismaButton = document.querySelector('.scroll-to-kathisma-button');
-  if (window.pageYOffset <= 99) {
+  if (window.pageYOffset <= 100) {
     if (!scrollToKathismaButton) {
       const newButton = document.createElement('button');
       newButton.textContent = 'К Кафизме';
