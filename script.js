@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
       newButton.textContent = 'К Кафизме';
       newButton.classList.add('scroll-to-kathisma-button');
       newButton.style.position = 'fixed';
-      newButton.style.top = '20px';
+      newButton.style.bottom = '20px';
       newButton.style.right = '20px';
       newButton.style.zIndex = '999';
       newButton.addEventListener('click', () => {
