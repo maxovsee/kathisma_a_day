@@ -1,14 +1,18 @@
-const kathismas = document.querySelectorAll('.kathisma');
-const today = new Date();
-const dayOfYear = today.getDate() + (today.getMonth() * 30 - 1); // rough estimate, adjust as needed
+// кафизма в день
+let kathismaCount = 12;
 
-kathismas.forEach((kathisma, index) => {
- if (index === dayOfYear % kathismas.length) {
-   kathisma.style.display = 'block';
- } else {
-   kathisma.style.display = 'none';
- }
-});
+function showKathisma() {
+  const kathismaElement = document.getElementById(`kathisma-${kathismaCount}`);
+  kathismaElement.style.display = 'block';
+
+  setTimeout(() => {
+    kathismaElement.style.display = 'none';
+    kathismaCount = (kathismaCount % 365) + 1; // assuming you have 365 kathismas
+    showKathisma();
+  }, 86400000); // 1 day in milliseconds
+}
+
+showKathisma();
 
 // Add a button to scroll to the current kathisma, if the user is at the top of the page
 window.addEventListener('scroll', () => {
